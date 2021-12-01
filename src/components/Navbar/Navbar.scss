@@ -1,0 +1,30 @@
+@import '../../index.scss';
+.navbar{
+    background:$mainBlack !important;
+    display:grid !important;
+    grid-template-columns: auto 1fr !important;
+}
+
+.nav-links{
+    align-self:center!important;
+    list-style-type: none !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    text-align: center !important;
+}
+
+.nav-link{
+    color:$mainGrey !important;
+    text-transform: capitalize !important;
+    text-decoration: none !important;
+    font-size: 1.2rem !important;
+    // transition:all 0.3s linear;
+    &:hover{
+        color:$mainGreen !important;
+    }
+}
+
+.active{
+    color:$mainGreen !important;
+}
+
